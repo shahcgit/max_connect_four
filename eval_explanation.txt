@@ -1,0 +1,25 @@
+My eval function is will decided a score using the logic below:
+1 - Calculate the number of fours each player has got.
+2 - Compare the number of fours of each player.
+3 - Now if the max player has got more fours then return the number of fours it has got as a positive value
+suggesting that this is the positive scenario for the AI and should try and go in this direction.
+4 - If the max player has got lesser number of fours than then return the number of fours of the min player 
+but as a negative value. This will tell the AI to definitely not take this scenario as it will lead to a loss.
+5 - Incase the scores are equal then return 0 suggesting that this is a neutral scenario and the AI can choose 
+this against a scenario got in step 4.
+
+
+Depth vs Time Calculation:
+time python maxconnect4.py one-move input1.txt output1.txt [depth]
+
+Depth   CPU runtime
+1       0m0.017s
+2       0m0.021s
+3       0m0.055s
+4       0m0.106s
+5       0m0.324s
+6       0m0.585s
+7       0m1.984s
+8       0m4.597s
+9       0m21.593s
+10      0m59.899s
